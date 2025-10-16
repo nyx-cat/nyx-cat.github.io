@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Toysans;
+    src: url('assets/Toysans.ttf');
+}
+
+#maymoo {
+    max-height: 45vh;
+    transition: transform .1s;
+    display: inline-block;
+    filter: drop-shadow(10px 10px 10px #22222298);
+    -webkit-filter: drop-shadow(10px 10px 10px #22222298);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #maymoo:hover {
+        transform: scale(1.05);
+    }
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 45vh;
+}
+
+#container-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+}
+
+html,
+body {
+    background-color: #89CFF0;
+    cursor: url('assets/Fork.ico'), default;
+}
+
+#header {
+    text-align: center;
+    font-family: 'Toysans', 'sans-serif';
+    font-weight: bold;
+    color: rgb(243, 233, 138);
+    filter: drop-shadow(5px 5px 5px #22222298);
+    -webkit-filter: drop-shadow(5px 5px 5px #22222298);
+    font-size: 2.5rem;
+}
+
+#copy {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -9px;
+    width: 99vw;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
