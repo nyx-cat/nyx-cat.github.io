@@ -15,6 +15,8 @@ const bite = () => {
 
     if (bites === MAX_BITES - 1) {
         slurpSound.play();
+        
+        const burpSound = new Audio('assets/burp.mp3');
         titleText.innerHTML = "Full from maymoo?"
         setTimeout(() => { burpSound.play(); }, 1000);
     }
@@ -22,6 +24,8 @@ const bite = () => {
         biteSound.play();
     }
     else {
+        // Allows for synchronous sound
+        const burpSound = new Audio('assets/burp.mp3');
         burpSound.play();
     }
 
